@@ -1,3 +1,3 @@
-# Addon Name
+# Storyline
 
-This is the repository for <Addon Name>. Modified for Ascension.gg. 
+This is the repository for Storyline. Modified for Ascension.gg. 
