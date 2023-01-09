@@ -241,14 +241,14 @@ function Storyline_API.addon:OnEnable()
 	Storyline_NPCFrameBG:SetDesaturated(true);
 
 	Storyline_NPCFrameChatNext:SetScript("OnClick", function()
-		if Storyline_NPCFrameChat.start and Storyline_NPCFrameChat.start < Storyline_NPCFrameChatText:GetText():len() then
+		if Storyline_NPCFrameChat.start and Storyline_NPCFrameChatText:GetText() and Storyline_NPCFrameChat.start < Storyline_NPCFrameChatText:GetText():len() then
 			Storyline_NPCFrameChat.start = Storyline_NPCFrameChatText:GetText():len();
 		else
 			playNext(Storyline_NPCFrameModelsYou);
 		end
 	end);
 	Storyline_NPCFrameChatNextButton:SetScript("OnClick", function()
-		if Storyline_NPCFrameChat.start and Storyline_NPCFrameChat.start < Storyline_NPCFrameChatText:GetText():len() then
+		if Storyline_NPCFrameChat.start and Storyline_NPCFrameChatText:GetText() and Storyline_NPCFrameChat.start < Storyline_NPCFrameChatText:GetText():len() then
 			Storyline_NPCFrameChat.start = Storyline_NPCFrameChatText:GetText():len();
 		else
 			playNext(Storyline_NPCFrameModelsYou);
